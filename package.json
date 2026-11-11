@@ -7,7 +7,7 @@
     "tailwindcss": "^3.4.19"
   },
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./public/style.css --minify",
+    "build": "node ./node_modules/tailwindcss/lib/cli.js -i ./src/input.css -o ./public/style.css --minify",
     "dev": "npm run build && netlify dev"
   }
 }
